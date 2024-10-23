@@ -1,5 +1,7 @@
 const { isValid } = require("./index");
 
+// using this site to create tests https://orcascan.com/tools/free-barcode-generator
+
 const cases = [
   {
     symbology: "ean_8",
@@ -141,6 +143,71 @@ const cases = [
     symbology: "isbn",
     value: "1122261900581",
     expected: false,
+  },
+  {
+    symbology: "upc_a",
+    value: "1122261900581",
+    expected: false,
+  },
+  {
+    symbology: "upc_a",
+    value: "96385074",
+    expected: false,
+  },
+  {
+    symbology: "upc_a",
+    value: "090936000067",
+    expected: false,
+  },
+  {
+    symbology: "upc_a",
+    value: "810012110099",
+    expected: true,
+  },
+  {
+    symbology: "upc_a",
+    value: "090936000069",
+    expected: true,
+  },
+  {
+    symbology: "upc_a",
+    value: "00810012110098",
+    expected: false,
+  },
+  {
+    symbology: "upc_a",
+    value: "164400000197",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "14922640",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "15923875",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "14090501",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "17963961",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "02647494",
+    expected: true,
+  },
+  {
+    symbology: "upc_e",
+    value: "17963962",
+    expected: true,
   },
 ];
 
