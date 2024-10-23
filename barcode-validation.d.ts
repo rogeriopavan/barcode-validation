@@ -1,4 +1,4 @@
-type Symbology = "ean_13" | "ean_8" | "jan_13" | "jan_8";
+type Symbology = "ean_13" | "ean_8" | "jan_13" | "jan_8" | "isbn" | "issn";
 
 declare module "barcode-validation" {
   export function isValid(symbology: Symbology, value: string): boolean;

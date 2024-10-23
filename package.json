@@ -10,7 +10,7 @@
   "description": "A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8",
   "typings": "./barcode-validation.d.ts",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "29.7.0"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,15 @@
     "node",
     "npm",
     "EAN-13",
-    "EAN-8"
+    "EAN-8",
+    "issn",
+    "isbn",
+    "ean"
   ],
-  "homepage": "https://github.com/pavandasilva/barcode-validation#readme"
+  "homepage": "https://github.com/pavandasilva/barcode-validation#readme",
+  "dependencies": {
+    "@form-validation/validator-ean": "2.4.0",
+    "@form-validation/validator-isbn": "2.4.0",
+    "@form-validation/validator-issn": "2.4.0"
+  }
 }

@@ -92,6 +92,56 @@ const cases = [
     value: "978020137962",
     expected: false,
   },
+  {
+    symbology: "issn",
+    value: "978020137962",
+    expected: false,
+  },
+  {
+    symbology: "issn",
+    value: "96385074",
+    expected: false,
+  },
+  {
+    symbology: "issn",
+    value: "0378-5955",
+    expected: true,
+  },
+  {
+    symbology: "issn",
+    value: "0471-3445,",
+    expected: false,
+  },
+  {
+    symbology: "isbn",
+    value: "978-0-596-52068-7",
+    expected: true,
+  },
+  {
+    symbology: "isbn",
+    value: "978 0 596 52068 7",
+    expected: true,
+  },
+  {
+    symbology: "isbn",
+    value: "9780596520687",
+    expected: true,
+  },
+  {
+    symbology: "isbn",
+    value: "0-596-52068-9",
+    expected: true,
+  },
+  {
+    symbology: "isbn",
+    value: "0471-3445,",
+    expected: false,
+  },
+  {
+    symbology: "isbn",
+    value: "1122261900581",
+    expected: false,
+  },
 ];
 
 describe("barcode-validator", () => {
