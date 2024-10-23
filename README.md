@@ -1,6 +1,6 @@
 # barcode-validation
 
-A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8".
+A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8, JAN-13, JAN-18, ISBN, UPC-A, UPC-E".
 
 ## Installation
 
@@ -15,11 +15,17 @@ npm install barcode-validation
 ```javascript
 const { isValid } = require("barcode-validation");
 
-# for 'ean_8'
 const result = isValid("ean_8", "96385074"); //true 
 
-# for 'ean_13'
 const result = isValid("ean_13", "1493221968850"); //true
+
+const result = isValid("isbn", "978-0-596-52068-7"); //true
+
+const result = isValid("issn", "0378-5955"); //true
+
+const result = isValid("upc_a", "090936000069"); //true
+
+const result = isValid("upc_e", "02647494"); //true
 
 ```
 
