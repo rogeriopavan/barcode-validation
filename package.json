@@ -1,0 +1,15 @@
+{
+  "name": "barcode-validation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rogerio Pavan",
+  "license": "ISC",
+  "description": "A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8",
+  "typings": "./barcode-validation.d.ts",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
