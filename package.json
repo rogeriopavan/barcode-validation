@@ -6,10 +6,24 @@
     "test": "jest"
   },
   "author": "Rogerio Pavan",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8",
   "typings": "./barcode-validation.d.ts",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavandasilva/barcode-validation.git"
+  },
+  "keywords": [
+    "Barcode",
+    "Validator",
+    "barcode",
+    "node",
+    "npm",
+    "EAN-13",
+    "EAN-8"
+  ],
+  "homepage": "https://github.com/pavandasilva/barcode-validation#readme"
 }
