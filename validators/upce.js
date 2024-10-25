@@ -48,8 +48,6 @@ function upc_e(data) {
   }
 
   const cleanedBarcode = data.replace(/\s/g, "").replace(/-/g, "");
-  // 14-digits (UPC-A) with leading zeros "00012345678905"
-  // 12-digits (UPC-A) "012345678905"
 
   if (cleanedBarcode.length !== 8) {
     return false;
