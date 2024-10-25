@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavandasilva/barcode-validation.git"
+    "url": "git+https://github.com/rogeriopavan/barcode-validation.git"
   },
   "keywords": [
     "Barcode",
@@ -28,7 +28,7 @@
     "isbn",
     "ean"
   ],
-  "homepage": "https://github.com/pavandasilva/barcode-validation#readme",
+  "homepage": "https://github.com/rogeriopavan/barcode-validation#readme",
   "dependencies": {
     "@form-validation/validator-ean": "2.4.0",
     "@form-validation/validator-isbn": "2.4.0",
