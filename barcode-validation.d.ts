@@ -1,4 +1,4 @@
-type Symbology =
+export type Symbology =
   | "ean_13"
   | "ean_8"
   | "jan_13"
