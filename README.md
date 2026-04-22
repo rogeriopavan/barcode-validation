@@ -1,6 +1,6 @@
 # barcode-validation
 
-A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8, JAN-13, JAN-18, ISBN, UPC-A, UPC-E".
+A JavaScript library for validating barcodes. Supported symbologies: EAN-13, EAN-8, JAN-13, JAN-18, ISBN, UPC-A, UPC-E, CODE 128".
 
 ## Installation
 
