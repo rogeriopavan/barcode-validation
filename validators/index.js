@@ -4,6 +4,7 @@ const isbn = require("./isbn");
 const issn = require("./issn");
 const upc_a = require("./upca");
 const upc_e = require("./upce");
+const code_128 = require("./code128");
 
 module.exports = {
   ean_8,
@@ -14,4 +15,5 @@ module.exports = {
   issn,
   upc_a,
   upc_e,
+  code_128,
 };
