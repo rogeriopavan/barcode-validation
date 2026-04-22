@@ -209,6 +209,56 @@ const cases = [
     value: "17963962",
     expected: true,
   },
+  {
+    symbology: "code_128",
+    value: "Hello World",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "SN12345678",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "ABC-12345",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "",
+    expected: false,
+  },
+  {
+    symbology: "code_128",
+    value: "Héllo",
+    expected: false,
+  },
+  {
+    symbology: "code_128",
+    value: "日本語",
+    expected: false,
+  },
+  {
+    symbology: "code_128",
+    value: "\t",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "\n",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "\x00",
+    expected: true,
+  },
+  {
+    symbology: "code_128",
+    value: "\x7F",
+    expected: true,
+  },
 ];
 
 describe("barcode-validator", () => {
